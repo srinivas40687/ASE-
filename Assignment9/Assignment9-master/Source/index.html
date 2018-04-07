@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LAB9</title>
+    <script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="keys.js"></script>
+    <script type="text/javascript" src="classification.js"></script>
+    <script src="classification.js"> </script>
+    <script>
+        function getsent() {
+
+            var url = "https://api.uclassify.com/v1/uclassify/genderanalyzer_v5/classify/?readKey=ALx6B0U2HsG8&text=" + hello;
+        }
+    </script>
+    <style>
+        #imgurl {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            background-color: lightgray;
+        }
+        .button {
+            background-color: darkblue;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .button4 {border-radius: 12px;}
+    </style>
+
+</head>
+<body style="background-color: papayawhip">
+<center>
+<div class="center">
+    <label class="class1">Copy the Image URL in the input box below for the Classification</label>
+    <input type="text" id="imgurl" placeholder="Paste your Image URL here" width="100" height="200" size="70">
+    <button class="button button4" onclick=run(document.getElementById('imgurl').value) >Retrieve tags</button>
+</div>
+<br />
+<table align="center"  width="1200" height="200" border="0" cellpadding="5">
+    <tr>
+        <td align="center" valign="center">
+            <div id="data_bef_img"></div>
+            <br />
+
+        </td>
+        <td align="center" valign="center">
+            <div id="check"></div>
+            <br />
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="center">
+            <h3><b><div id="data_for_img"></div></b></h3>
+            <br />
+        </td>
+        <td align="center" valign="center">
+            <div id="tags"></div>
+            <br />
+        </td>
+    </tr>
+</table>
+<div id="demo" align="center">
+</div>
+</center>
+</body>
+</html>
