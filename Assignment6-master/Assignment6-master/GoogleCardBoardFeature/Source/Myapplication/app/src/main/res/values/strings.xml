@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VideoApplication</string>
+    <string name="action_settings">Settings</string>
+    <string name="paragraph1">A 360 degree vr view  cricket sample video!</string>
+</resources>
