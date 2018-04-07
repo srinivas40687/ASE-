@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="Maps.js" ></script>
+</head>
+<body>
+<input id="origin-input" class="controls" type="text"
+       placeholder="Enter an origin location">
+
+<input id="destination-input" class="controls" type="text"
+       placeholder="Enter a destination location">
+
+<div id="mode-selector" class="controls">
+    <input type="radio" name="type" id="changemode-walking" checked="checked">
+    <label for="changemode-walking">Walking</label>
+
+    <input type="radio" name="type" id="changemode-driving">
+    <label for="changemode-driving">Driving</label>
+</div>
+<div id="googleMap" style="width:100%;height:500px;"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap&libraries=places"></script>
+<!--
+To use this code on your website, remove the API key:
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+-->
+</body>
+</html>
